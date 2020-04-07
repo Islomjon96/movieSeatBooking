@@ -1,0 +1,123 @@
+@import url(../fonts/stylesheet.css);
+@import url(../fonts/imoon/style.css);
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #242333;
+  color: #fff; }
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  position: relative; }
+
+p {
+  margin: 0; }
+
+h3 {
+  text-transform: unset; }
+
+ol,
+ul {
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+.container,
+.container-fluid {
+  padding: 0; }
+
+.movie-container {
+  margin: 2rem 0; }
+  .movie-container select {
+    background-color: #fff;
+    border: 0;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    padding: .5rem 1.5rem;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none; }
+  .movie-container label {
+    font-size: 1.4rem; }
+
+.showcase {
+  color: #777;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: space-between; }
+  .showcase .seat:not(.occupied):hover {
+    cursor: default;
+    transform: scale(1); }
+  .showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem; }
+    .showcase li span {
+      margin-left: .2rem;
+      font-size: 1.2rem; }
+
+.hall-container {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  perspective: 1000px; }
+
+.seat {
+  background-color: #444451;
+  height: 12px;
+  width: 15px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; }
+  .seat.selected {
+    background-color: #6feaf6; }
+  .seat.occupied {
+    background-color: #fff; }
+  .seat:nth-of-type(2) {
+    margin-right: 18px; }
+  .seat:nth-last-of-type(2) {
+    margin-left: 18px; }
+  .seat:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.2); }
+
+.row {
+  display: flex; }
+
+.screen {
+  background-color: #fff;
+  height: 7rem;
+  width: 200px;
+  margin: 1.5rem 0;
+  transform: rotateX(-45deg);
+  box-shadow: 0 0.3rem 1rem rgba(255, 255, 255, 0.7); }
+
+.text {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: .5rem 0; }
+  .text span {
+    color: #6feaf6; }
